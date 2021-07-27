@@ -1,12 +1,20 @@
-print("hello")
+
 # 1st ans
-list = []
-n = int(input("Enter the number of elements in list:"))
-for x in range(0, n):
-    element = input("Enter element:")
-    list.append(element)
-print("Your current list is:", list)
-temp = list[0]
-list[0] = list[n-1]
-list[n-1] = temp
-print("New list is:", list)
+# case 1
+list = [12, 35, 9, 56, 24]
+# sorting first and last values in variables
+f = list[0]
+l = list[-1]
+# Placing the variable values at first and last index
+list[-1] = f
+list[0] = l
+print("The new list is : ", list)
+# case 2
+list = [1, 2, 3]
+# sorting first and last values in variables
+f = list[0]
+l = list[-1]
+# Placing the variable values at first and last index
+list[-1] = f
+list[0] = l
+print("The new list is : ", list)
